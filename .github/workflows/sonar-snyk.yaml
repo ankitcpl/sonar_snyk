@@ -72,7 +72,7 @@ jobs:
       #     rm -rf ~/.config/snyk
         
       - name: Authenticate Snyk
-        run: snyk auth ${{ secrets.S_TOKEN }} --debug
+        run: snyk auth ${{ secrets.SNYK_TOKEN }} --debug
 
       - name: Run Snyk test (all detected projects)
         env:
